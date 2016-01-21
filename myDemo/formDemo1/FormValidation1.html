@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FormValidation1</title>
+	<!--<link rel="stylesheet" href="css/bootstrap.min.css"/>-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/fv1.js"></script>
+	<style>
+		div{margin-bottom: 8px;}
+		input:focus,textarea:focus{
+			border: 3px solid #ff0000;
+			background: #b3b3b3;
+		}
+	</style>
+</head>
+<body>
+<div id="form">
+	<form action="" method="post" id="regForm">
+		<fieldset>
+			<legend>个人基本信息</legend>
+			<div>
+				<label for="username">用户名：</label>
+				<input id="username" type="text" value="请输入用户名" />
+			</div>
+			<div>
+				<label for="password">密码：</label>
+				<input id="password" type="text" value="请输入密码" />
+			</div>
+			<div>
+				<label for="msg">详细信息：</label>
+				<input id="msg" type="text" value="请输入详细信息"/>
+			</div>
+		</fieldset>
+	</form>
+</div>
+</body>
+</html>
