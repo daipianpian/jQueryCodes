@@ -1,0 +1,11 @@
+自己写出的基于jquery的弹出提示框始终处于窗口的居中位置（类似于alert弹出框的效果）
+
+http://www.cnblogs.com/daipianpian/articles/5147350.html
+
+
+
+JQuery打造PHP的AJAX表单提交实例
+
+http://www.jb51.net/article/20733.htm
+
+
