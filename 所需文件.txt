@@ -9,3 +9,11 @@ JQuery打造PHP的AJAX表单提交实例
 http://www.jb51.net/article/20733.htm
 
 
+
+http://www.php1.cn/Content/JQuery_DaZao_PHP_De_AJAX_BiaoDanTiJiaoShiLi.html
+
+
+php1.cn网站
+http://www.php1.cn/
+
+
