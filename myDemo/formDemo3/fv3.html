@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FormValidation2</title>
+	<!--<link rel="stylesheet" href="css/bootstrap.min.css"/>-->
+	<link rel="stylesheet" href="css/fv2.css"/>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/fv3.js"></script>
+</head>
+<body>
+	<div  id="contact_form">
+		<form action="" method="post">
+			<div class="int">
+				<label for="username">用户名</label>
+				<input type="text" id="username" class="required" />
+			</div>
+			<div class="int">
+				<label for="pw1">密码</label>
+				<input type="password" id="pw1" class="required" />
+			</div>
+			<div class="int">
+				<label for="pw2">确认密码</label>
+				<input type="password" id="pw2" class="required" disabled="disabled" />
+				<span class="formtip onInfo">请先输入密码，在进行确认</span>
+			</div>
+			<div class="int">
+				<label for="tel">手机号</label>
+				<input type="text" id="tel" class="required" />
+			</div>
+			<div class="int">
+				<label for="email">邮箱</label>
+				<input type="text" id="email" class="required" />
+			</div>
+			<div class="int">
+				<label for="personinfo">资料</label>
+				<input type="text" id="personinfo" />
+			</div>
+			<div class="sub">
+				<input type="submit" id="send" value="提交" />
+				<input type="reset" id="reset" value="重置" />
+			</div>
+			<div id="result"></div>
+		</form>
+	</div>
+</body>
+</html>
