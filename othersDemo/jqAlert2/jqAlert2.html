@@ -1,0 +1,45 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>弹出确认框始终位于窗口的中间位置的测试</title>
+    <style type="text/css"> 
+    /*.header{width: 100%;height: 800px;background: lightgreen;} */
+    .mask {position: absolute; top: 0px; filter: alpha(opacity=60); background-color: #777;  z-index: 1002; left: 0px;  opacity:0.5; -moz-opacity:0.5;  }  
+    .model{position: absolute; z-index: 1003;width:320px; height:320px; text-align:center;  background-color:#0066FF; display: none;}           
+    </style> 
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">  
+    //兼容火狐、IE8  
+    function showMask(){  
+        $("#mask").css("height",$(document).height());  
+        $("#mask").css("width",$(document).width());  
+        $("#mask").show();  
+    }  
+    //让指定的DIV始终显示在屏幕正中间  
+    function letDivCenter(divName){   
+        var top = ($(window).height() - $(divName).height())/2;   
+        var left = ($(window).width() - $(divName).width())/2;   
+        var scrollTop = $(document).scrollTop();   
+        var scrollLeft = $(document).scrollLeft();   
+        $(divName).css( { position : 'absolute', 'top' : top + scrollTop, left : left + scrollLeft } ).show();  
+    }  
+    function showAll(divName){  
+        showMask();  
+        letDivCenter(divName);  
+    }  
+</script>  
+</head>
+<body>
+    <!-- <div class="header"></div> -->
+    <div id="mask" class="mask"></div>  
+    <a href="javascript:;" onclick="showMask()" >点我显示遮罩层</a><br />  
+    <a href="javascript:;" onclick="letDivCenter('#model')">点我让DIV始终显示在屏幕中间</a><br />  
+    <a href="javascript:;" onclick="showAll('#model')">点我显示所有</a><br />  
+    <div>  
+        <div id="model" class="model">  
+            这是内容（不过没有垂直居中显示）希望各位高手，能够补充。小弟在此谢过了。  
+        </div>  
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@width:1000px;
+@height:200px;
+@text-align:center;
+@font-size:16px;
+
+// reset
+*{margin:0 auto;padding:0;}
+
+/*html主题内容的样式*/
+#header{width:@width;height:@height+200;line-height:@height+200;text-align:@text-align;font-size:@font-size*2;background-color:pink;}
+#content{width:@width;height:@height+500;line-height:@height+500;text-align:@text-align;font-size:@font-size*2;background-color:lightgreen;}
+#footer{width:@width;height:@height+100;line-height:@height+100;text-align:@text-align;font-size:@font-size*2;background-color:skyblue;}
+
+/*返回按钮样式*/
+#returnTop{position:fixed;float:right;right:80px;bottom:100px;}
+#returnTop a{text-align:center;text-decoration:none;color:#d1d1d1;display:block;width:80px;
+	      /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+	      -moz-transition:color 1s;
+	      -webkit-transition:color 1s;
+	      -o-transition:color 1s;}
+#returnTop a span{border-radius:6px;display:block;height:80px;width:80px;line-height: 80px;text-align: center;font-size: 20px;color: #E8E8E8;margin-bottom:5px;background:#48B4B4;
+  /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/
+  -moz-transition:background 1s;
+  -webkit-transition:background 1s;
+  -o-transition:background 1s;}
+#returnTop a:hover span{color: #fff;background:#1F8686;}
