@@ -25,3 +25,7 @@ http://zhidao.baidu.com/link?url=VN74M6wVxoCJFTidErjR0wOkxjcidGBoFoeaoAEovlEMz7H
 
 
 http://www.cnblogs.com/jayleke/archive/2012/08/10/2633174.html
+
+
+
+前端微信分享代码怎么写
