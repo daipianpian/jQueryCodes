@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*loading*/
+.loading{ width:100%; height:100%; background:#eec908; position:absolute;  z-index: 99;}
+.h5share{  width: 100%; text-align: center; font-size: 36px; color: #fff; position: absolute; left: 0; top: 50%; margin-top: -80px;}
+.loadingNum{ width:100%; text-align:center; font-size:36px; color: #fff; position: absolute; left: 0; top: 50%; margin-top:17px; }
+
+
+/*公共*/
+.wrap{ overflow:hidden; -webkit-transform-style:preserve-3d;-webkit-backface-visibility:hidden; position:relative;  left: 0; top: 0; background-color: #666666;}
+.screen{ position:absolute; z-index:90; display:none;}
+
+.screen1{background-color: #00A5FF;}
+.screen2{background-color: #25e582;text-align: center;}
+.screen3{background-color: #b13947;text-align: center;}
+.tishi{position: absolute;width:30px;height:20px;top:90%;left:50%;margin-left:-15px;background: yellow;}
+
+.divForm{width: 250px;height: 140px;position: absolute;top:50%;margin-top: -80px;left: 50%;margin-left: -125px; background-color: lightgreen;background-size: cover;position: absolute;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;}
+.formCont{width: 250px;height: 30px;line-height:30px;margin: 13px 0;}
+.formCont label{width: 75px;height: 30px; display:inline-block;text-align: center;top:50%;}
+.formCont input{width: 160px;height: 30px; position: absolute;line-height:30px;border: none; background-color: #CBFCCB;background-size: 100% 100%;-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px;}
+.sub{width: 250px; height: 30px;line-height:30px;text-align: center;margin: 12px 0;}
+.sub input{width: 50px;height:30px;line-height: 30px; margin: 0 8px;border: none; color:#f0f0f0; font-size: 14px; background-color: #55B755;-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;}
+/*.result{width:200px;height:80px;line-height:80px;text-align:center; position: absolute; z-index: 200; top:50%;margin-top: -40px; left: 50%;margin-left: -100px; background: pink;}*/
+.result{width:200px;height:80px;line-height:80px;text-align:center; position: absolute; z-index: 200;background: pink;}
+.onError{width:200px;height:80px;}
