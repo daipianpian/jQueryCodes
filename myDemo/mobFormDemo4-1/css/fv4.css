@@ -14,6 +14,7 @@
 .screen1{background-color: #00A5FF;}
 .screen2{background-color: #25e582;text-align: center;}
 .screen3{background-color: #b13947;text-align: center;}
+.screen4{background-color: orange;text-align: center;}
 .tishi{position: absolute;width:30px;height:20px;top:90%;left:50%;margin-left:-15px;background: yellow;}
 
 .divForm{width: 250px;height: 140px;position: absolute;top:50%;margin-top: -80px;left: 50%;margin-left: -125px; background-color: lightgreen;background-size: cover;position: absolute;

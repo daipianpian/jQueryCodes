@@ -9,43 +9,26 @@ $(document).ready(function() {
     $('.screen').css({'width': '100%', 'height': clientHeight + 'px', 'line-height': clientHeight + 'px'});
 
     //点击切换到下一屏，当处于最后一屏时再点击，回到第一屏
-
-	$('.tishi').each(function(){
-		if($(this).index()!=$('.tishi').length+1){
-			$('.tishi').parent().hide();
-                	$('.screen1').show();
-		}else{
-                	$(this).parent().hide();
-                	$('.screen1').show();
-            	}
-	});
-
-/*
     var lay = function(){
+        var page = 1;
+        var page_count = $('.screen').length;
         $('.screen1').show();
-        $(function(){
-            $('.tishi:lt(3)').click(function () {
-                $(this).parent().hide();
-                $(this).parent().next().show();
-            });
+        $('.tishi').click(function(){
+            if(!$(this).is(':animated')){
+                if(page == page_count){
+                    $(this).parent().hide();
+                    $('.screen1').show();
+                    page=1;
+                }else{
+                    $(this).parent().hide();
+                    $(this).parent().next().show();
+                    page++;
+                }
+            }
         });
-        $(function(){
-            $('.tishi:last').click(function () {
-                $(this).parent().hide();
-                $('.screen1').show();
-            });
-        });
-    }
+     }
     //调用lay()方法
     lay();
-*/
-
-
-/*    if($('.result').val().length == 0){
-        $('.result').hide();
-    }else{
-        $('.result').show();
-    }*/
 
     // div.result先设置为隐藏
     $('.result').hide();
@@ -72,8 +55,9 @@ $(document).ready(function() {
             return false;
         }else{
             //验证手机号
-            var reg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
-            if(!reg.test($('#tel').val())){
+            var reg = /^[1][3-8]\d{9})$/;
+            var tel = $('#tel').val()
+            if(!reg.test(tel)){
                 var errorMsg = '手机号不正确 ！';
                 $('.result').append('<span class="onError">'+errorMsg+'</span>');
                 letDivCenter('.result');
